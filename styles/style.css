@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/* <weight>: Use a value from 300 to 700 */
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* shared styles */
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #808080;
+    --tertiary-color: #FEA301;
+}
+.display-flex {
+    display: flex;
+}
+.primary-btn {
+    border-radius: 12px;
+    border: none;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 10px 60px;
+}
+/* nav styles */
+.nav-container {
+    justify-content: space-between;
+    width: 100%;
+}
+.left-nav {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.middle-nav {
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.middle-nav1 {
+    color: var(--tertiary-color);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.middle-nav2, .middle-nav3, .middle-nav4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.middle-nav2 {
+    color: #01ACFD;
+}
+.middle-nav3 {
+    color: rgba(5, 212, 223, 1);
+}
+.middle-nav4 {
+    color: rgba(93, 88, 239, 1);
+}
+.right-nav {
+    justify-content: center;
+    align-items: center;
+}
+.right-nav > button {
+    background-color: #FEA301;
+}
+.mobile-hr {
+    display: none;
+}
+/* responsive design for Mobile device */
+@media screen and (max-width: 576px) {
+    .secondary-title,
+    .middle-nav,
+    .right-nav {
+        display: none;
+    }
+    .mobile-hr {
+        display: block;
+        border: 1px solid var(--tertiary-color);
+      }
+}
