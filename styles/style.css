@@ -27,6 +27,10 @@ body {
     max-width: calc(100% - 40px);
     margin: 0px 20px;
 }
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
 /* navbar styles */
 .nav-container {
     justify-content: space-between;
@@ -108,6 +112,75 @@ body {
 .banner-btn {
     background-color: #111111;
 }
+.banner {
+    padding-bottom: 3.5rem;
+}
+
+/* curriculum */
+.curriculum {
+    margin-bottom: 5rem;
+}
+.curriculum-title {
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/bg.png");
+    padding-bottom: 4rem;
+}
+.curriculum-items{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 28px;
+}
+.c-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2.5rem 2rem;
+    border-radius: 19px;
+}
+ .c-item1 > button{
+    color: #64C8FF;
+    background-color: #FFFFFF;
+ }
+ .c-item2 > button{
+    color: #F0AA00;
+    background-color: #FFFFFF;
+ }
+ .c-item3 > button{
+    color: #8700FF;
+    background-color: #FFFFFF;
+ }
+ .c-item1 {
+    background: linear-gradient(180deg, #DEFFFF 0%, rgba(255, 255, 255, 0) 40%);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+ }
+ .c-item2 {
+    background: linear-gradient(180deg, rgba(255, 244, 220, 1) 0%, rgba(255, 255, 255, 0) 40%);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+ }
+ .c-item3 {
+    background: linear-gradient(180deg, rgba(238, 225, 255, 1) 0%, rgba(255, 255, 255, 0) 40%);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+ }
+.curriculum-item-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #202020;
+    margin: 0px;
+}
+.curriculum-item-description {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+.curriculum-item-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+}
+
 /* responsive design for Mobile device */
 @media screen and (max-width: 576px) {
     .secondary-title,
@@ -139,4 +212,9 @@ body {
       .banner-title, .banner-description {
         text-align: center;
       }
+      .curriculum-items{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 28px;
+    }
 }
