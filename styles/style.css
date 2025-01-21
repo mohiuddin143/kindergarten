@@ -180,6 +180,27 @@ body {
     font-weight: bold;
     border: none;
 }
+/* arrow */
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+}
+.arrow p{
+    background-color: #FEA301;
+    color: #FFFFFF;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: none;
+    margin: 5px;
+    font-size: 2rem;
+    font-weight: bolder;
+    display: inline;
+    padding: 15px;
+    text-align: center;
+}
 
 /* responsive design for Mobile device */
 @media screen and (max-width: 576px) {
