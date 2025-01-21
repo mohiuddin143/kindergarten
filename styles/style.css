@@ -40,6 +40,13 @@
     align-items: center;
     gap: 30px;
 }
+.middle-nav li {
+    list-style: none;
+}
+.middle-nav li > a {
+    text-decoration: none;
+    color: inherit;
+}
 .middle-nav1 {
     color: var(--tertiary-color);
     font-size: 1.25rem;
@@ -65,8 +72,12 @@
 .right-nav > button {
     background-color: #FEA301;
 }
-.mobile-hr {
+.mobile-hr, .menu-icon {
     display: none;
+}
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
 }
 /* responsive design for Mobile device */
 @media screen and (max-width: 576px) {
@@ -75,6 +86,13 @@
     .right-nav {
         display: none;
     }
+    .nav-container {
+        justify-content: space-between;
+        align-items: center;
+      }
+      .menu-icon {
+        display: block;
+      }
     .mobile-hr {
         display: block;
         border: 1px solid var(--tertiary-color);
