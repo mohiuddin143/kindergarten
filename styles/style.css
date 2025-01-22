@@ -204,10 +204,17 @@ body {
     text-align: center;
 }
 /* stories */
+.stories-title {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
 .stories-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
+    justify-content: center;
     gap: 20px;
 }
 #story1 {
@@ -218,16 +225,76 @@ body {
     border-radius: 1rem;
     border: 2px solid green;
 }
+.story-div {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+}
+.story > img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 1rem;
+}
+.badge {
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 47px;
+    background-color: #F0AA00;
+    color: #FFFFFF;
+    border: none;
+    padding: 9px 18px;
+    max-width: 180px;
+    max-height: 50px;
+    text-align: center;
+    position: relative;
+
+}
+.badge-1 {
+    background-color: #3CD8E8;
+    top: -50px;
+    left: 20px;
+}
+.badge-2 {
+    background-color: #95B226;
+    top: -50px;
+    left: 20px;
+}
+.badge-3 {
+    background-color: #5D58F0;
+    top: -50px;
+    left: 20px;
+}
+.badge-4 {
+    background-color: #95B226;
+    top: -50px;
+    left: 20px;
+}
+.badge-5 {
+    background-color: #95B226;
+    top: -50px;
+    left: 20px;
+}
+.story h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-right: 1.5rem;
+}
+#story1  h6 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-right: 3rem;
+    margin: 50px 0px;
+}
+#classroom {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666666;
+}
 .stories {
     background-image: url("../assets/bg.png");
     background: linear-gradient(-0deg, rgba(254, 163, 1, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
-.stories-title {
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 4rem;
-}
-
 /* responsive design for Mobile device */
 @media screen and (max-width: 576px) {
     .secondary-title,
