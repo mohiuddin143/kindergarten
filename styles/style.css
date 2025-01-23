@@ -114,7 +114,7 @@ body {
 .banner-description {
     font-size: 1.25rem;
 }
-.banner-btn {
+.bc-black {
     background-color: #111111;
 }
 .banner {
@@ -302,12 +302,82 @@ body {
     color: #666666;
     max-width: 430px;
 }
-.stories {
+.stories{
     background-image: url("../assets/bg.png");
     background: linear-gradient(-0deg, rgba(254, 163, 1, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
 #story6 {
     display: none;
+}
+
+.view-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#view-btn {
+    margin-bottom: 90px;
+}
+.view-btn {
+    background-image: url("../assets/bg.png");
+}
+/* footer section */
+footer {
+    background-color: #01ACFD;
+}
+.footer-section {
+    max-width: 1460px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 150px;
+}
+.f-column-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.logo-div {
+    max-width: 300px;
+}
+.text-div {
+    max-width: 400px;
+}
+.footer-left-logo {
+    justify-content: center;
+    align-items: center;
+}
+.text-white {
+    color: white;
+}
+.middle-footer {
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    color: white;
+}
+.middle-footer li > a {
+    text-decoration: none;
+    color: inherit;
+}
+.f-column-3 {
+    flex-direction: column;
+    align-items: end;
+    gap: 16px;
+}
+.f-column-3 > p{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+}
+.logos {
+    justify-content: space-around;
+    gap: 10px;
+}
+.f-column-2 > p{
+    font-size: 1.5rem; 
+    font-weight: bold;
 }
 /* responsive design for Mobile device */
 @media screen and (max-width: 576px) {
@@ -370,5 +440,15 @@ body {
     #badge-child-1 {
         top: 105px;
         left: 30px;
+    }
+    #view-btn {
+        margin: 40px 0px;
+    }
+    .footer-section {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        gap: 25px;
+        padding: 10px 20px;
     }
 }
